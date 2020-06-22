@@ -279,7 +279,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
   font-size: 50px;
-  line-height: 53px;
+  line-height: 55px;
   font-weight: 700;
   text-align: left;
   -o-object-fit: fill;
@@ -294,7 +294,7 @@
 
 .block1 {
   display: block;
-  height: 10vh;
+  height: 50vh;
   max-height: none;
   min-height: 0px;
   margin: auto;
@@ -330,13 +330,13 @@
 
 .block2 {
   display: block;
-  height: 10vh;
+  height: 50vh;
   background-color: transparent;
 }
 
 .block3 {
   display: block;
-  height: 300vh;
+  height: 1000vh;
   background-color: transparent;
 }
 
@@ -380,7 +380,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: auto;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -446,6 +446,7 @@
   -ms-grid-row-align: center;
   align-self: center;
   font-size: 50px;
+  line-height: 50px;
 }
 
 .plus {
@@ -468,7 +469,7 @@
 }
 
 .block4 {
-  height: 10vh;
+  height: 50vh;
   background-color: transparent;
 }
 
@@ -545,7 +546,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: auto;
+  overflow: visible;
   max-width: none;
   margin-right: 0px;
   margin-left: 40px;
@@ -658,7 +659,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
   font-size: 40px;
-  line-height: 38px;
+  line-height: 43px;
   font-weight: 400;
   text-align: left;
   -o-object-fit: scale-down;
@@ -666,7 +667,7 @@
 }
 
 .block5 {
-  height: 10vh;
+  height: 50vh;
   background-color: transparent;
 }
 
@@ -856,8 +857,9 @@
 .link-3 {
   position: relative;
   right: 0px;
-  display: inline;
+  display: none;
   width: auto;
+  height: auto;
   margin-left: 0px;
   font-family: 'Ubuntu Mono', sans-serif;
   color: #f0f;
@@ -1199,6 +1201,75 @@
   align-items: flex-start;
 }
 
+.div-block-11 {
+  position: fixed;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-2 {
+  position: fixed;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  display: block;
+  width: 25px;
+  margin-right: auto;
+  margin-bottom: 15vh;
+  margin-left: auto;
+}
+
+.small-end-gap {
+  position: static;
+  display: block;
+  height: 30vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: none;
+  clear: none;
+}
+
+.end-bit {
+  position: static;
+  display: block;
+  height: 10vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: none;
+  clear: none;
+}
+
+.early-access {
+  position: absolute;
+  right: auto;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 0px;
+  font-family: 'Ubuntu Mono', sans-serif;
+  color: #f0f;
+  font-size: 40px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.early-access:hover {
+  text-decoration: underline;
+}
+
+.smaller-gap {
+  position: static;
+  display: block;
+  height: 70vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: none;
+  clear: none;
+}
+
 @media screen and (max-width: 991px) {
   .page1 {
     overflow: visible;
@@ -1213,8 +1284,12 @@
     height: 500vh;
   }
   .image {
+    width: 250px;
     margin-right: auto;
     margin-left: auto;
+    text-align: left;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
   .page3 {
     overflow: visible;
@@ -1238,14 +1313,14 @@
     overflow: visible;
   }
   .column-6 {
-    height: 80vh;
+    height: 40vh;
   }
   .column-7 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 20vh;
+    height: 40vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
@@ -1259,6 +1334,10 @@
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+    text-align: left;
+  }
+  .div-block-10 {
+    margin-right: auto;
   }
   .page6 {
     display: none;
@@ -1297,14 +1376,33 @@
   .nav-grid {
     text-align: center;
   }
+  .big-text {
+    line-height: 53px;
+  }
   .gap {
     background-color: transparent;
   }
+  .image {
+    width: 180px;
+  }
+  .heading-5 {
+    font-size: 40px;
+  }
+  .plus {
+    margin-right: 20px;
+    font-size: 40px;
+  }
   .column-6 {
-    height: 70vh;
+    height: 40vh;
   }
   .column-7 {
-    height: 30vh;
+    height: 40vh;
+  }
+  .end-bit {
+    background-color: transparent;
+  }
+  .smaller-gap {
+    background-color: transparent;
   }
 }
 
@@ -1330,36 +1428,47 @@
     border-top: 1px solid #c4c4c4;
   }
   .big-text {
-    font-size: 25px;
+    font-size: 28px;
     line-height: 30px;
   }
   .image {
+    width: 180px;
     margin-bottom: 0px;
   }
+  .page3 {
+    height: 100px;
+  }
   .heading-5 {
-    font-size: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+    line-height: 29px;
   }
   .heading-6 {
     position: static;
     display: block;
+    margin-left: 5px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 29px;
   }
   .plus {
-    font-size: 30px;
+    margin-right: 10px;
+    font-size: 25px;
+    line-height: 29px;
   }
   .page4 {
-    display: none;
+    display: block;
   }
   .page5 {
     height: auto;
   }
   .paragraph-2 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 23px;
   }
   .div-block-8 {
     position: absolute;
@@ -1386,6 +1495,23 @@
     -ms-flex-align: start;
     align-items: flex-start;
   }
+  .div-block-10 {
+    max-width: 80vw;
+  }
+  .vscode {
+    width: 60px;
+  }
+  .figma {
+    width: 60px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .googledoc {
+    width: 60px;
+  }
+  .notion {
+    width: 60px;
+  }
   .div1-1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1398,6 +1524,9 @@
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
+  }
+  .early-access {
+    font-size: 25px;
   }
 }
 
