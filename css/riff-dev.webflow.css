@@ -706,7 +706,7 @@
   font-family: 'Ubuntu Mono', sans-serif;
   color: #6d6d6d;
   font-size: 18px;
-  text-align: left;
+  text-align: right;
   text-decoration: none;
 }
 
@@ -751,10 +751,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: right;
 }
 
 .columns-2 {
@@ -887,6 +888,7 @@
   -ms-flex-item-align: auto;
   -ms-grid-row-align: auto;
   align-self: auto;
+  text-align: right;
 }
 
 .utility-page-wrap {
@@ -1268,6 +1270,18 @@
   margin-bottom: auto;
   float: none;
   clear: none;
+}
+
+.column-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 @media screen and (max-width: 991px) {
