@@ -208,6 +208,10 @@
   text-align: center;
 }
 
+.footer:hover {
+  text-decoration: underline;
+}
+
 .utility-page-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -297,7 +301,7 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .image-2 {
@@ -376,6 +380,11 @@
   font-size: 20px;
   line-height: 45px;
   text-align: center;
+  text-decoration: none;
+}
+
+.footer-copy:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
