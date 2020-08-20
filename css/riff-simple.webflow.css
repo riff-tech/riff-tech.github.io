@@ -198,7 +198,9 @@
   top: auto;
   bottom: 0px;
   z-index: auto;
+  padding-right: 1em;
   padding-left: 0px;
+  float: left;
   font-family: 'Source Sans Pro', sans-serif;
   color: #686868;
   font-size: 20px;
@@ -286,6 +288,10 @@
 
 .link {
   z-index: 20;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-color: #000;
   color: #707070;
   text-decoration: none;
 }
@@ -303,6 +309,73 @@
   margin-right: auto;
   margin-bottom: 20vh;
   margin-left: auto;
+}
+
+.footer-copy {
+  position: static;
+  top: auto;
+  bottom: 0px;
+  z-index: auto;
+  padding-left: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #686868;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.footer-copy {
+  position: static;
+  top: auto;
+  bottom: 0px;
+  z-index: auto;
+  padding-left: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #686868;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.footer-copy {
+  position: static;
+  top: auto;
+  bottom: 0px;
+  z-index: auto;
+  padding-left: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #686868;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.footer-copy {
+  position: static;
+  top: auto;
+  bottom: 0px;
+  z-index: auto;
+  padding-left: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #686868;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.footer-copy {
+  position: static;
+  top: auto;
+  bottom: 0px;
+  z-index: auto;
+  padding-right: 1em;
+  padding-left: 0px;
+  float: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #686868;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -329,29 +402,74 @@
 
 @media screen and (max-width: 767px) {
   .text-1 {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 27px;
   }
   .container-2 {
     max-width: 80vw;
   }
   .text-3 {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 27px;
   }
   .text-2 {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 27px;
   }
   .early-access {
-    font-size: 45px;
+    font-size: 30px;
+  }
+  .invite {
+    font-size: 30px;
   }
   .text-4 {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 27px;
+  }
+  .footer {
+    padding-right: 1em;
+    float: left;
+    font-size: 18px;
+    text-align: center;
   }
   .columns {
     display: none;
+  }
+  .div-block-11 {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .footer-copy {
+    display: block;
+    padding-right: 60px;
+    float: none;
+    font-size: 15px;
+    text-align: center;
+  }
+  .footer-copy {
+    padding-right: 0px;
+    float: none;
+    text-align: center;
+  }
+  .footer-copy {
+    padding-right: 60px;
+    float: none;
+    text-align: center;
+  }
+  .footer-copy {
+    padding-right: 0px;
+    float: left;
+    text-align: center;
+  }
+  .div-block-12 {
+    width: 100vw;
+  }
+  .footer-copy {
+    padding-right: 1em;
+    float: left;
+    font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -374,6 +492,9 @@
     font-size: 25px;
     line-height: 27px;
   }
+  .div-block-4 {
+    height: auto;
+  }
   .early-access {
     font-size: 30px;
   }
@@ -383,6 +504,14 @@
   .text-4 {
     font-size: 25px;
     line-height: 27px;
+  }
+  .footer {
+    display: block;
+    font-size: 18px;
+  }
+  .footer-copy {
+    display: none;
+    font-size: 18px;
   }
 }
 
