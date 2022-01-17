@@ -1,53 +1,8 @@
-.video {
-	width: 100%;
-	max-width: 729px;
-	margin: 80px;
-	border-radius: 16px;
-	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.45);
-}
-
-@media screen and (max-width: 991px) {
-	.video {
-		width: 69%;
-		max-width: 729px;
-		margin: 80px;
-		border-radius: 16px;
-		box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.45);
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.video {
-		width: 100%;
-		max-width: none;
-		margin-top: 32px;
-		margin-bottom: 32px;
-		border-radius: 10px;
-	}
-}
-
-@media only screen and (min-width: 1441px) {
-	.img-wrapper {
-		border-radius: 10px;
-		padding-left: 80px;
-		padding-right: 80px;
-	}
-
-	.img-wrapper-reverse {
-		border-radius: 10px;
-		padding-left: 80px;
-		padding-right: 80px;
-	}
-
-	.image-2 {
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-
-	.video {
-		margin-right: 0px;
-		margin-left: 0px;
-	}
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 h1 {
@@ -58,6 +13,11 @@ h1 {
   font-size: 64px;
   line-height: 77px;
   font-weight: 700;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .body {
@@ -305,8 +265,8 @@ h1 {
   max-width: 784px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 132px;
-  padding-bottom: 132px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -486,14 +446,13 @@ h1 {
 }
 
 .cover-image {
-  max-width: 784px;
+  max-width: none;
   margin: 150px 32px 130px;
   border-radius: 16px;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
 .image {
-  width: 100%;
+  width: auto;
 }
 
 .section-1 {
@@ -567,6 +526,7 @@ h1 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  mix-blend-mode: normal;
 }
 
 .heading-2 {
@@ -595,7 +555,6 @@ h1 {
   max-width: 729px;
   margin: 80px;
   border-radius: 16px;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.45);
 }
 
 .section-2 {
@@ -711,7 +670,7 @@ h1 {
 
 .points {
   padding-top: 68px;
-  padding-bottom: 190px;
+  padding-bottom: 68px;
   background-color: #121217;
   text-align: center;
 }
@@ -745,7 +704,7 @@ h1 {
   display: flex;
   width: 100%;
   max-width: 1184px;
-  margin-top: 98px;
+  margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -769,6 +728,10 @@ h1 {
   margin-bottom: 30px;
 }
 
+.heading-3 {
+  width: 1000px;
+}
+
 .link {
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
@@ -787,6 +750,12 @@ h1 {
 }
 
 .cover-img-wrapper.anim-show-on-screen {
+  width: 100vw;
+  max-width: 1200px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 650px;
@@ -943,6 +912,7 @@ h1 {
   }
 
   .heading-3 {
+    width: auto;
     font-size: 48px;
     line-height: 60px;
   }
